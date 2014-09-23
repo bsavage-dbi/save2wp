@@ -1,0 +1,34 @@
+<!doctype html>
+<style type="text/css">
+	#mainPopup {
+		padding: 10px;
+		height: 200px;
+		width: 400px;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+	#loading p{
+		text-align: center;
+	}
+</style>
+<body>
+	<div id="mainPopup">
+		<h1>Save to WordPress</h1>
+		<p>Enter tags for the Article here.</p>
+		<div id="loading">
+			<p><img src="ajax-loader.gif" alt="loading"></p>
+		</div>
+		<small id="progressCounter"></small>
+		<form action="" id="popupform">
+			<span class="lbltags">Tags: </span>
+			<input type="text" name="txtTags" id="txtTags" placeholder="e.g: tag1, tag2, tag3"/>
+			<input type="button" value="Save"  id="btnSave">
+		</form>
+	</div>
+</body>
+<script type="text/javascript" src="../../thirdParty/jquery.js"></script>
+<script type="text/javascript" src="../options_custom/lib/store.js"></script>
+<script type="text/javascript" src="../../js/background.js"></script>
+</script>
