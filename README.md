@@ -1,6 +1,6 @@
 Save to WordPress
 ------------------
-A google chrome extension to save article on the web, and publish it tp your WordPress website.
+A google chrome extension to save article on the web, and publish it to your WordPress website.
 
 Requirement
 ------------------
