@@ -18,11 +18,11 @@
     "default_popup": "src/browser_action/browser_action.html"
   },
   "permissions": [
-    "tabs"
+    "tabs","*://*/*"
   ],
   "content_scripts": [
     {
-      "matches" : [ "http://*/*" ],
+      "matches" : [ "*://*/*" ],
       "js": ["js/background.js", "src/inject/inject.js","thirdParty/jquery.js"]
     }
   ],

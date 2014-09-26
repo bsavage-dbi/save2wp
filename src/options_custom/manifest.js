@@ -25,8 +25,8 @@ this.manifest = {
             "group": i18n.get("login"),
             "name": "wp_url",
             "type": "text",
-            "label": i18n.get("api-url"),
-            "text": i18n.get("x-wpapi-url")
+            "label": i18n.get("wp-url"),
+            "text": i18n.get("x-wp-url")
         },
         {
             "tab": i18n.get("WP config"),

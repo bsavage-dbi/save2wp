@@ -31,9 +31,9 @@ this.i18n = {
         "en": "Password:",
         "de": "Passwort:"
     },
-    "api-url": {
-        "en": "WP API url:",
-        "de": "WP API url:"
+    "wp-url": {
+        "en": "WP site url:",
+        "de": "WP site url:"
     },
     "x-characters": {
         "en": "Your WordPress username"
@@ -41,8 +41,8 @@ this.i18n = {
     "x-characters-pw": {
         "en": "Your WordPress password"
     },
-    "x-wpapi-url": {
-        "en": "e.g: http://mywebsite.com/wp-json/"
+    "x-wp-url": {
+        "en": "http://mywebsite.com"
     },
     "description": {
         "en": "Your WordPress login will be used to access JSON REST API basic authentication. Make sure you already installed <a href='https://wordpress.org/plugins/json-rest-api/'>JSON REST API (WP API)</a>, <a href='https://wordpress.org/plugins/json-rest-api-wp-api-categories-and-tags/'>JSON REST API (WP API) Categories and Tags</a> and <a href='https://github.com/WP-API/Basic-Auth'>Basic-Auth</a> plugin. Authentication method <a href='https://github.com/WP-API/OAuth1'>OAuth1</a> Will be used when WordPress 4.1 released."

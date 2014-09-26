@@ -2,7 +2,7 @@ var settings = new Store("settings", {});
 var options = settings.toObject();
 var wp_username = options['wp_username'];
 var wp_password= options['wp_password'];
-var wp_url= options['wp_url'];
+var wp_url= options['wp_url']+"/wp-json/posts";
 var readability_token = options['readability_token'];
 
 window.addEventListener("load", initialize);
@@ -69,7 +69,7 @@ function createPost(json){
 	var wp_content = json['content'];
 	var inTags = document.getElementById('txtTags').value;
 	var wp_tags = inTags.split(',');
-	var wp_categories = ['aex2bxc', 'cat1'];
+	var wp_categories = ['cat1'];
 	var wp_source = json['url'];
 
 	$(document).ready(function(){
@@ -87,7 +87,7 @@ function createPost(json){
 				'data[x-tags]':wp_tags,
 				'data[x-categories]': wp_categories,
             	'data[content_raw]' :  wp_content,
-            	'data[post_meta]': [{'key' : 'source_url', 'value' : json['url']}],
+            	'data[post_meta]': [{'key' : 'source_url', 'value' : wp_source }],
             	'data[status]' : 'publish'
 			},
 			xhr: function () {
